@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="toDo.css">
+    <title>To-Do List Web App</title>
+</head>
+
+<body class="body">
+
+    <div class="fathCon">
+        <div class="mainAddTaskCon">
+            <!-- Heading here -->
+            <div class="headCon">
+                <h1 class="h1">Personal Task Manager</h1>
+            </div>
+
+            <div class="dataCon">
+                <!-- Input Add Task here -->
+                <div class="inputCon">
+                    <div class="addTask">
+                        <h5 class="h5">Add Task</h5>
+                        <div class="inpFields">
+                            <input type="title" name="title" id="titles" class="titles" placeholder="title">
+                            <input type="description" name="description" id="titles2" class="titles"
+                                placeholder="description">
+                            <select name="priority" id="titles3" class="titles">
+                                <option value="Low">Low</option>
+                                <option value="High">High</option>
+                                <option value="Medium">Medium</option>
+                            </select>
+                        </div>
+                        <button type="submit" class="btnSub" onclick="addTaskBtnSub()">Add</button>
+                    </div>
+
+                    <!-- Input Filter Task here -->
+                    <div class="mainFilterTaskCon">
+                        <h5 class="h5">Filter Task</h5>
+                        <div class="inputFilterCon">
+                            <select name="state" id="state" class="All" oninput="filterTask()">
+                                <option value="All">All</option>
+                                <option value="Completed">Completed</option>
+                                <option value="Pending">Pending</option>
+                            </select>
+                            <select name="priority" id="priority" class="All">
+                                <option value="Low">Low</option>
+                                <option value="High">High</option>
+                                <option value="Medium">Medium</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <!-- Input Project Task here -->
+                    <div class="projectTaskCon">
+                        <div class="inputProjectCon">
+                            <input type="checkbox" name="checkbox" id="checkbox">
+                            <div class="head">
+                                <h5 id="headOfTitlte"></h5>
+                            </div>
+                            <div class="head2">
+                                <h5 id="headOfdescription"></h5>
+                                <div class="decText" id="headOfpriority"></div>
+                            </div>
+                            <div class="linkText">
+                                <h5>Edit</h5>
+                            </div>
+                        </div>
+                        <!-- Finish Project upper -->
+
+                        <div class="separate"></div>
+
+                        <div class="inputProjectCon">
+                            <input type="checkbox" name="checkbox" id="checkbox">
+                            <div class="head">
+                                <h5>Buy groceries</h5>
+                                <h6>Milk ,bread ,eggs</h6>
+                            </div>
+                            <div class="head2">
+                                <h5>Milk ,bread ,eggs</h5>
+                                <div class="decText">Medium</div>
+                            </div>
+                            <div class="linkText">
+                                <h5 class="linkEdit">Edit</h5>
+                            </div>
+                        </div>
+                        <!-- Buy groceries upper -->
+
+                        <div class="separate"></div>
+
+                        <div class="inputProjectCon">
+                            <input type="checkbox" name="checkbox" id="checkbox">
+                            <div class="head">
+                                <h5>Read book</h5>
+                                <h6>Start with chapter 1</h6>
+                            </div>
+                            <div class="head2">
+                                <h5>Start with chapter 1</h5>
+                                <div class="decText">Low</div>
+                            </div>
+                            <div class="linkText">
+                                <h5 class="linkEdit">Edit</h5>
+                            </div>
+                        </div>
+                        <!-- Read book upper -->
+
+                    </div>
+                </div>
+            </div>
+        </div>
+</body>
+
+<script src="toDo.js"></script>
+
+</html>
