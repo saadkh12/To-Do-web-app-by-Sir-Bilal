@@ -38,7 +38,7 @@
                     <div class="mainFilterTaskCon">
                         <h5 class="h5">Filter Task</h5>
                         <div class="inputFilterCon">
-                            <select name="state" id="state" class="All" oninput="filterTask()">
+                            <select name="state" id="state" class="All">
                                 <option value="All">All</option>
                                 <option value="Completed">Completed</option>
                                 <option value="Pending">Pending</option>
@@ -52,62 +52,16 @@
                     </div>
 
                     <!-- Input Project Task here -->
-                    <div class="projectTaskCon">
-                        <div class="inputProjectCon">
-                            <input type="checkbox" name="checkbox" id="checkbox">
-                            <div class="head">
-                                <h5 id="headOfTitlte"></h5>
-                            </div>
-                            <div class="head2">
-                                <h5 id="headOfdescription"></h5>
-                                <div class="decText" id="headOfpriority"></div>
-                            </div>
-                            <div class="linkText">
-                                <h5>Edit</h5>
-                            </div>
-                        </div>
-                        <!-- Finish Project upper -->
-
-                        <div class="separate"></div>
-
-                        <div class="inputProjectCon">
-                            <input type="checkbox" name="checkbox" id="checkbox">
-                            <div class="head">
-                                <h5>Buy groceries</h5>
-                                <h6>Milk ,bread ,eggs</h6>
-                            </div>
-                            <div class="head2">
-                                <h5>Milk ,bread ,eggs</h5>
-                                <div class="decText">Medium</div>
-                            </div>
-                            <div class="linkText">
-                                <h5 class="linkEdit">Edit</h5>
-                            </div>
-                        </div>
-                        <!-- Buy groceries upper -->
-
-                        <div class="separate"></div>
-
-                        <div class="inputProjectCon">
-                            <input type="checkbox" name="checkbox" id="checkbox">
-                            <div class="head">
-                                <h5>Read book</h5>
-                                <h6>Start with chapter 1</h6>
-                            </div>
-                            <div class="head2">
-                                <h5>Start with chapter 1</h5>
-                                <div class="decText">Low</div>
-                            </div>
-                            <div class="linkText">
-                                <h5 class="linkEdit">Edit</h5>
-                            </div>
-                        </div>
-                        <!-- Read book upper -->
-
+                    <div id="dynFathCont" class="projectTaskCon" style="display: none;">
                     </div>
+                    <!-- Finish Project upper -->
+
+
+                    <div id="separate" class="separate"style="display: none;"></div>
                 </div>
             </div>
         </div>
+    </div>
 </body>
 
 <script src="toDo.js"></script>
