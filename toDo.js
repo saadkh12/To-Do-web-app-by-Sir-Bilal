@@ -46,10 +46,10 @@ function addTaskBtnSub() {
     // console.log("dataRetrive", dataRetrive);
     const retrivedStored = JSON.parse(dataRetrive)
     // console.log("retrivedStored", retrivedStored);
-if(retrivedStored.length > 0 ){
-    dynFathCont.style.display = "block"
-    // separate.style.display ="flex"
-}
+    if (retrivedStored.length > 0) {
+        dynFathCont.style.display = "block"
+        // separate.style.display ="flex"
+    }
     retrivedStored.forEach((task) => {
 
         const childCont = document.createElement("div");
@@ -86,5 +86,6 @@ if(retrivedStored.length > 0 ){
 
     inpTitle.value = "";
     inpDescription.value = "";
-    addPriority.value = "";
+    addPriority.value = "Low";
 }
+
